@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: none;
+  scrollbar-color: rgb(13 148 136) white;
+  scroll-behavior: smooth;
+}
+
+.nav-side.active {
+  color: rgb(13 148 136);
+  font-weight: bold;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px 0px 0px 10px;
+  width: 100%;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Kustom bezier */
+  box-shadow: 10px 0px 15px -5px rgb(255, 255, 255);
+}
+
+.nav-bottom.active div {
+  position: absolute;
+  top: -35px;
+  color: white;
+  font-weight: bold;
+  padding: 1.3rem;
+  background-color: rgb(13 148 136);
+  border-radius: 37px;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.nav-bottom.active span {
+  display: block;
+}
